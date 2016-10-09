@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="hades.org.sensorapp.MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="欢迎，请点击下面启动器启动应用！"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:textSize="28px"
+        android:textColor="#000000"
+        android:id="@+id/welcome_tv"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/welcome_tv"
+        android:layout_marginTop="20dip"
+        >
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="启动指南针"
+            android:id="@+id/start_compass"
+            android:onClick="starter"/>
+        <Button
+            android:layout_marginTop="20dip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="启动水平仪"
+            android:id="@+id/start_spirit"
+            android:onClick="starter"/>
+    </LinearLayout>
+
+</RelativeLayout>
